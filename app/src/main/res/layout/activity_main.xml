@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#346981"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="11dp"
+        android:autoText="true"
+        android:backgroundTint="#4FCCCF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="¡Aprende las Vocales!"
+        android:textAlignment="center"
+        android:textColor="#67D1C1"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="342dp"
+        android:layout_height="20dp"
+        android:text="Seleccione la imágen de tu preferencia"
+        android:textAlignment="center"
+        android:textColor="#73D5E1"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_a"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="24dp"
+        android:background="#A3E8F1"
+        android:backgroundTint="#95D5CD"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/imgbtn_i"
+        app:layout_constraintEnd_toStartOf="@+id/imgbtn_e"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/aguacate2" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_e"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="#A3E8F1"
+        android:backgroundTint="#95D5CD"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/imgbtn_o"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/estrella" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_i"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="28dp"
+        android:background="#95D5CD"
+        android:backgroundTint="#95D5CD"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/imgbtn_u"
+        app:layout_constraintEnd_toStartOf="@+id/imgbtn_o"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/iguana" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_o"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="28dp"
+        android:background="#95D5CD"
+        android:backgroundTint="#95D5CD"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/imgbtn_u"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/oso" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_u"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginBottom="16dp"
+        android:background="#95D5CD"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/uniforme" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
